@@ -1,0 +1,307 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation Styles */
+.topnav {
+    display: flex;
+    justify-content: center;
+    background-color: #070910;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.topnav a:hover {
+    background-color: #937B6E;
+    color: #ffffff;
+}
+
+/* Header Styles */
+.header {
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: bottom; 
+    height: 550px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+} 
+    
+.overlay {
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    color: #ffffff;
+    padding: 40px; 
+    width: 60%;
+    max-width: 600px;
+}
+
+.overlay img {
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+
+.overlay h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.overlay h4 {
+    font-size: 18px;
+}
+
+/* About Section Styles */
+.about {
+    background-color: #111211;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.content h2 {
+    text-transform: uppercase;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #fff;
+}
+
+/* Gallery Section Styles */
+.image-gallery {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(../img/11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.image-gallery h2 {
+    text-transform: uppercase;
+}
+
+.gallery {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #fff;
+}
+
+/* Hobbies Section Styles */
+.hobbies {
+    background-color: #111211;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hobby {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hobby h2 {
+    text-transform: uppercase;
+}
+
+/* Social Links Styles */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+}
+
+.facebook-link a {
+    color: #3b5998;
+}
+
+.facebook-link a:hover {
+    color: #2d4373; 
+}
+
+.instagram-link a {
+    color: #E4405F;
+}
+
+.instagram-link a:hover {
+    color: #bc2a8d;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Scroll to Top Button Styles */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#scrollTopBtn:hover {
+    background-color: #555;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For screens smaller than 768px (phones) */
+@media (max-width: 767px) {
+    .header {
+        height: 300px;
+    }
+    
+    .overlay {
+        padding: 20px;
+    }
+
+    .overlay h1 {
+        font-size: 24px;
+    }
+
+    .overlay h4 {
+        font-size: 14px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .about-image img {
+        max-width: 300px;
+    }
+
+    .image-gallery {
+        padding: 40px 10px;
+    }
+
+    .hobbies {
+        padding: 40px 10px;
+    }
+
+    .hobby {
+        padding: 20px;
+    }
+
+    .center-container {
+        margin-top: 10px;
+    }
+
+    #scrollTopBtn {
+        bottom: 10px;
+        right: 10px;
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* For screens between 768px and 1024px (tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .topnav a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .header {
+        height: 400px;
+    }
+
+    .overlay {
+        padding: 30px;
+    }
+
+    .overlay h1 {
+        font-size: 28px;
+    }
+
+    .overlay h4 {
+        font-size: 16px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .about-image img {
+        max-width: 300px;
+    }
+
+    .image-gallery {
+        padding: 60px 20px;
+    }
+
+    .hobbies {
+        padding: 60px 20px;
+    }
+
+    .hobby {
+        padding: 30px;
+    }
+
+    .center-container {
+        margin-top: 20px;
+    }
+
+    #scrollTopBtn {
+        bottom: 20px;
+        right: 20px;
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
